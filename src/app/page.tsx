@@ -61,7 +61,7 @@ export default function AppWrapper() {
 
 function SandboxPage() {
   const [mounted, setMounted] = useState(false);
-  const [logs, setLogs] = useState<string[]>(['> NeoBank Core OS booted.']);
+  const [logs, setLogs] = useState<string[]>(['>  Core OS booted.']);
   const [pendingTx, setPendingTx] = useState<any>(null);
   const [clientSafeAddress, setClientSafeAddress] = useState<`0x${string}` | undefined>(undefined);
 
@@ -225,7 +225,7 @@ function SandboxPage() {
     <div className="min-h-screen bg-[#F0F0F0] text-black font-mono p-4 md:p-8 selection:bg-black selection:text-white">
       <header className="border-b-4 border-black pb-4 mb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
         <div>
-          <h1 className="text-4xl font-black uppercase tracking-tighter bg-black text-white px-2 inline-block">NeoBank // Multi-Channel OS</h1>
+          <h1 className="text-4xl font-black uppercase tracking-tighter bg-black text-white px-2 inline-block"> Multi-Channel OS</h1>
           <p className="text-sm font-bold text-gray-600 mt-2">ERC-4337 Advanced Non-Custodial Infrastructure Framework</p>
         </div>
         <div className="text-sm border-2 border-black px-3 py-1 bg-white font-black uppercase shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
@@ -234,7 +234,7 @@ function SandboxPage() {
       </header>
 
       <div className="mb-8 border-4 border-black bg-yellow-100 p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-xs md:text-sm">
-        <span className="font-black uppercase bg-black text-white px-2 py-0.5 mr-2">Interview Playbook:</span>
+        <span className="font-black uppercase bg-black text-white px-2 py-0.5 mr-2">Playbook:</span>
         <strong>Left:</strong> Client-side EIP-1193 interceptor via Privy wallet injection.{' '}
         <strong>Right:</strong> Server-side session key relayer — settles physical card swipes on-chain without a wallet popup.
       </div>
